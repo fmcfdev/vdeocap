@@ -1,0 +1,35 @@
+# --- Vdeocap: Python / Backend ---
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.pytest_cache/
+
+# --- Processamento de Vídeo (Arquivos Gerados) ---
+# Ignora os vídeos de teste e as legendas temporárias
+backend/storage/uploads/*
+backend/storage/outputs/*
+!backend/storage/uploads/.gitkeep
+!backend/storage/outputs/.gitkeep
+backend/*.ass
+backend/*.mp4
+
+# --- Vdeocap: Node.js / Frontend ---
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.env*
+frontend/.vercel
+
+# --- Modelos de IA (Se baixados localmente) ---
+.huggingface/
+.argos-translate/
+
+# --- Outros ---
+.DS_Store
+*.log
+.vscode/
+.idea/
