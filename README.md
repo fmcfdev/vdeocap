@@ -54,21 +54,6 @@ Documentação interativa (Swagger): http://127.0.0.1:8000/docs
 
 ---
 
-## 📂 Estrutura do Projeto
-
-vdeocap/
-├── backend/
-│ ├── main.py # Ponto de entrada da API
-│ ├── app/ # Lógica principal
-│ │ ├── core/ # Motores de IA e Renderização
-│ │ └── utils/ # Mapeamentos e Helpers
-│ ├── storage/ # Arquivos temporários (Uploads/Outputs)
-│ └── requirements.txt # Contrato de dependências
-├── frontend/ # Interface Next.js (Work in Progress)
-└── .gitignore # Proteção de arquivos pesados e venv
-
----
-
 ## 📄 Licença
 
 Distribuído sob a licença MIT.
