@@ -23,13 +23,24 @@ frontend/out/
 frontend/build/
 frontend/.env*
 frontend/.vercel
+*.tsbuildinfo
+
+# --- Logs de Erro do Node/NPM ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
 
 # --- Modelos de IA (Se baixados localmente) ---
 .huggingface/
 .argos-translate/
+*.pt
+*.pth
+*.bin
 
-# --- Outros ---
+# --- Outros (SO e IDEs) ---
 .DS_Store
+Thumbs.db
 *.log
 .vscode/
 .idea/

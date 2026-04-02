@@ -58,17 +58,17 @@ class Renderer:
 
         # Cabeçalho do arquivo ASS com as definições de estilo
         header = f"""[Script Info]
-ScriptType: v4.00+
-PlayResX: {res_x}
-PlayResY: {res_y}
+                    ScriptType: v4.00+
+                    PlayResX: {res_x}
+                    PlayResY: {res_y}
 
-[V4+ Styles]
-Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Custom,{font_name},{font_size},{primary_color},&H000000FF,&H00000000,{back_color},1,0,0,0,100,100,{spacing},0,3,{outline_padding},0,2,100,100,{margin_v},1
+                    [V4+ Styles]
+                    Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+                    Style: Custom,{font_name},{font_size},{primary_color},&H000000FF,{back_color},{back_color},1,0,0,0,100,100,{spacing},0,3,{outline_padding},0,2,100,100,{margin_v},1
 
-[Events]
-Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-"""
+                    [Events]
+                    Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+                """
         with open(path, "w", encoding="utf-8") as f:
             f.write(header)
             for s in segments:
